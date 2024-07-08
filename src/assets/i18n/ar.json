@@ -1,0 +1,24 @@
+{
+    "validation":{
+        "requiredMessage":"هذا الحقل مطلوب",
+         "emailMessage":"البريد الالكتروني غير صالح",
+         "passwordMessage":"كلمة المرور مطلوبة",
+        "confirmPasswordMessage":"كلمة المرور يجب ان تكون على الاقل 6 حروف",
+        "Login":"تسجيل الدخول",
+        "Register":"تسجيل",
+        "Email": "البريد الالكتروني",
+        "Password": "كلمة المرور",
+        "Confirm Password": "تأكيد كلمة المرور"
+    },
+    "navbar":{
+        "YAHADINI":"YAHADINI",
+        "Home":"الرئيسية",
+        "Card":"البطاقة",
+        "Users":"المستخدمين",
+        "Auth":"التسجيل",
+        "Logout":"تسجيل الخروج",
+        "Language":"اللغة",
+        "Search":"بحث"
+
+    }
+}

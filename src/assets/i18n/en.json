@@ -1,0 +1,23 @@
+{
+    "validation":{
+        "requiredMessage":"Email is required",
+        "emailMessage":"Enter a valid email",
+        "passwordMessage":"Password is required",
+        "confirmPasswordMessage":"Password must be at least 6 characters",
+        "Login":"Login",
+        "Register":"Register",
+        "Email": "Email",
+        "Password": "Password",
+        "Confirm Password": "Confirm Password"
+    },
+    "navbar":{
+        "YAHADINI":"YAHADINI",
+        "Home":"Home",
+        "Card":"Card",
+        "Users":"Users",
+        "Auth":"Auth",
+        "Logout":"Logout",
+        "Language":"Language",
+        "Search":"Search"
+    }
+}

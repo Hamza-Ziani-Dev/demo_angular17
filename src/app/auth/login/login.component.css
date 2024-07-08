@@ -1,0 +1,41 @@
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .logo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-error {
+    font-size: 12px;
+    color: red;
+  }
+  
+  

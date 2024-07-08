@@ -1,0 +1,27 @@
+<mat-card class="login-container">
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+    <h2>{{'validation.Login' | translate}}</h2>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>{{'validation.email' | translate}}</mat-label>
+      <input matInput type="email" required [(ngModel)]="email" name="email" email>
+      <mat-error *ngIf="loginForm.controls['email']?.invalid && loginForm.controls['email']?.touched">
+        <span *ngIf="loginForm.controls['email']?.errors?.['required']">{{'validation.requiredMessage' | translate}}</span>
+        <span *ngIf="loginForm.controls['email']?.errors?.['email']">{{'validation.emailMessage' | translate}}</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>{{'validation.password' | translate}}</mat-label>
+      <input matInput type="password" required [(ngModel)]="password" name="password" minlength="6">
+      <mat-error *ngIf="loginForm.controls['password']?.invalid && loginForm.controls['password']?.touched">
+        <span *ngIf="loginForm.controls['password']?.errors?.['required']">{{'validation.requiredMessage' | translate}}</span>
+        <span *ngIf="loginForm.controls['password']?.errors?.['minlength']">{{'validation.confirmPasswordMessage' | translate}}</span>
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">{{'validation.Login' | translate}}</button>
+    <br><br><br>
+    <button mat-raised-button type="button" (click)="register()">{{'validation.Register' | translate}}</button>
+  </form>
+</mat-card>
