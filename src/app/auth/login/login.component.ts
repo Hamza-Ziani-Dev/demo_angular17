@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, NgForm } from '@angular/forms';
 import { SharedModule } from '../../shared/shared/shared.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,6 +16,8 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
+  constructor(private router: Router){}
+
 
 
   login(form: any) {
@@ -25,8 +28,10 @@ export class LoginComponent {
   }
 
   register() {
+    
     // Handle registration logic here
     console.log('Register button clicked');
+    this.router.navigate(['/auth/register']);
   }
 
 }
