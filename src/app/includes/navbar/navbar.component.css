@@ -1,0 +1,29 @@
+/* Custom Navbar Styles */
+.navbar {
+    background-color: #28a745; /* Bootstrap's success color */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+.form-control {
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.btn-outline-light {
+    border: 2px solid #fff;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
